@@ -1,0 +1,42 @@
+import os
+import shutil
+import subprocess
+import time
+
+# Find the path to the Echo VR game folder
+echo_vr_path = ""
+for drive in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+    path = drive + ":\"
+    for root, dirs, files in os.walk(path):
+        if "echovr.exe" in files:
+            if "bin" in root and "win10" in root:
+                echo_vr_path = root
+                break
+    if echo_vr_path:
+        break
+
+if not echo_vr_path:
+    print("Echo VR game folder not found!")
+    exit()
+
+# Move only the necessary files from "Desktop/Echo combat by cat" to the Echo VR folder
+desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
+echo_combat_path = os.path.join(desktop_path, "Echo combat by cat")
+files_to_move = ["EchoVRCombat.dll", "EchoVRCombat.ini"]
+for file in files_to_move:
+    src_path = os.path.join(echo_combat_path, file)
+    dst_path = os.path.join(echo_vr_path, file)
+    shutil.copy(src_path, dst_path)
+
+# Launch the game and wait for 1 minute
+game_path = os.path.join(echo_vr_path, "echovr.exe")
+subprocess.call(game_path)
+time.sleep(60)
+
+# Close the game and delete the copied files
+os.system("taskkill /im echovr.exe /f")
+for file in files_to_move:
+    os.remove(os.path.join(echo_vr_path, file))
+
+# Display welcome message
+print("Welcome to combat!")
