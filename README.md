@@ -1,5 +1,5 @@
-# Download
-Download "Echo combat by cat" unpack the zip (It must be on the DESKTOP) and everything you need will be contained in the folder
+# How to Use
+Donwload the folder unpack it and put it onto your Desktop then click on combat.exe
 
 # How it Works
 It replaces and moves files around and starts echo once (takes 2-3 minutes)
