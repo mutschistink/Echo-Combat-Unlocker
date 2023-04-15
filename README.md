@@ -1,5 +1,5 @@
 # How to Use
-Download the folder unpack it and put it onto your Desktop then click on combat.exe
+Download the folder unpack it put it onto your Desktop then click on combat.exe
 
 # How it Works
 It replaces and moves files around and starts echo once (takes 2-3 minutes)
