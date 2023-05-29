@@ -1,6 +1,6 @@
 # DISCLAIMER
-there is no point in using this because RAD in fact META decided 3 month before the closing of the Servers that it would be great to make it free (which it is)
-so use this as u want maybe it still provides a use for someone (fuck you cat for blocking me still even after me deleting it)
+there is no point in using this because RAD in fact META decided 3 months before the closing of the Servers that it would be great to make it free (which it is)
+(fuck you cat for blocking me still even after me deleting it)
 # How to Use
 Download the folder unpack it put it onto your Desktop then click on combat.exe
 
